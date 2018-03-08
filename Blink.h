@@ -1,16 +1,16 @@
 
 
-#ifndef Morse_h
-#define Morse_h
+#ifndef Blink_h
+#define Blink_h
 
 #include "Arduino.h"
 
-class Morse
+class Blink
 {
   public:
-    Morse(int pin);
-    void dot();
-    void dash();
+    blink(int pin);
+    void on();
+    void off();
   private:
     int _pin;
 };
