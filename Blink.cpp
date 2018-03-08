@@ -1,24 +1,22 @@
 #include "Arduino.h"
 #include "Blink.h"
 
-Morse::Morse(int pin)
+Blink::blink(int pin)
 {
   pinMode(pin, OUTPUT);
   _pin = pin;
 }
 
-void Morse::dot()
+void Blink::on(int t)
 {
   digitalWrite(_pin, HIGH);
-  delay(250);
-  digitalWrite(_pin, LOW);
-  delay(250);  
+  delay(t);
+ 
 }
 
-void Morse::dash()
+void Blink::off(int t)
 {
-  digitalWrite(_pin, HIGH);
-  delay(1000);
+ 
   digitalWrite(_pin, LOW);
-  delay(250);
+  delay(t);
 }
