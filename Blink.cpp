@@ -1,7 +1,7 @@
 #include "Arduino.h"
 #include "Blink.h"
 
-Blink::blink(int pin)
+Blink::Blink(int pin)
 {
   pinMode(pin, OUTPUT);
   _pin = pin;
