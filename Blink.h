@@ -1,5 +1,3 @@
-
-
 #ifndef Blink_h
 #define Blink_h
 
@@ -9,8 +7,8 @@ class Blink
 {
   public:
     blink(int pin);
-    void on();
-    void off();
+    void on(int t);
+    void off(int t);
   private:
     int _pin;
 };
