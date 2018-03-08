@@ -7,5 +7,6 @@ void setup(){
   Serial.println("\nBlink Version 1.0 Ha Incheol);
 }
 void loop(){
-  
+  blink.on(500);
+  blink.off(300);
 }
